@@ -10,6 +10,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StoreModule } from "@ngrx/store";
 import { BirthdaysReducer } from '../ngrx/reducers/birthdays.reducer';
 import { BirthdayActions } from '../ngrx/actions/birthday.actions';
+import { BirthdayServiceProvider } from '../providers/birthday-service/birthday-service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BirthdayActions } from '../ngrx/actions/birthday.actions';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BirthdayActions
+    BirthdayActions,
+    BirthdayServiceProvider
   ]
 })
 export class AppModule {}
