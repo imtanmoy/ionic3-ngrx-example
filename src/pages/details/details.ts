@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { IonicPage, NavParams, ViewController } from 'ionic-angular';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../services/app-state';
 import { BirthdayActions } from '../../ngrx/actions/birthday.actions';
